@@ -1,6 +1,6 @@
 # DRL-Pong
 
-It is a pong game not using GYM environment. 
+It is a pong game not using GYM environment nor CNN
 
 ## Code Structure
 
