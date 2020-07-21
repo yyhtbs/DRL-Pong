@@ -19,9 +19,9 @@ The Pong Game is in the "pong-game" folder
 ## IO
 
 The Pong Game contains one CPU player and one RL player, the CPU player uses a naive (greedy) method always following the ball's x position. 
-The RL player takes features from the game as its state including: 1) the position of the ball, 2) the position of the player bar (bottom) and the position of the ball in the previous frame. 
+The RL player takes features from the game as its state including: 1) the position of the ball, 2) the position of the player bar (bottom) and 3) the position of the ball in the previous frame. 
 
-The RL player sends the **state** to the server to get the **action**, then push the 4-item tuple (s, a, s', r) to the server for training. THe server has a MLP of size 6x10x10x2 (state -> action<left, right>). 
+The RL player sends the **state** to the server to get the **action**, then push the 4-item tuple (s, a, s', r) to the server for training. THe server has a MLP of size 3x10x10x3 (state -> action<left, keep, right>). 
 
 ## Algorithm
 
